@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload Example</title>
+  </head>
+  <body>
+    <h1>File Upload Example</h1>
+
+    <p>
+      Please choose a file to upload:
+      <input type="file" id="fileInput" />
+    </p>
+
+    <script>
+      // You can add JavaScript code here for handling the file upload event
+      document
+        .getElementById("fileInput")
+        .addEventListener("change", function (event) {
+          var selectedFile = event.target.files[0];
+          if (selectedFile) {
+            alert("Selected file: " + selectedFile.name);
+            // You can perform additional actions with the selected file here
+          }
+        });
+    </script>
+  </body>
+</html>
